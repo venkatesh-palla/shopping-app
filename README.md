@@ -90,5 +90,36 @@ CREATE TABLE `coupons` (
 **Test results and API Responses:**
 https://docs.google.com/document/d/1xG0sABigjRNuFlEyTeCrWnjpC5yOMoIrhPF5UEMZ9IU/edit?usp=sharing
 
- 
+ API Definations:
+ Inventory:
+ ```
+curl --location 'http://localhost:8080/shopping/ecart/inventory' \
+--data ''
+```
+Get Coupons:
+```
+curl --location 'http://localhost:8080/shopping/ecart/fetchCoupons' \
+--data ''
+```
+Post Order:
+```
+curl --location --request POST 'http://localhost:8080/shopping/ecart/order/11/order?qty=10&coupon=OFF5' \
+--data ''
+```
+Payment:
+```
+curl --location --request POST 'http://localhost:8080/shopping/ecart/payment/11/7214/pay?amount=66.5' \
+--data ''
+```
+Get Order by Order id:
+```
+curl --location 'http://localhost:8080/shopping/ecart/order/7214' \
+--data ''
+```
+Get Order by User id AND Order Id:
+```
+curl --location 'http://localhost:8080/shopping/ecart/11/orders/1' \
+--data ''
+```
+
 
