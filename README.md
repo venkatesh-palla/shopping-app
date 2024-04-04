@@ -10,7 +10,16 @@
 For the sake of simplicity, you can assume the app has only one type of product in a fixed quantity that can be fetched from a config file during startup.
 For every user action, the response should be a JSON.
 
-**Database Tables:**
+# How to run project in your local system
+
+Follow the below steps to run the project in local mechine
+
+1. Clone the git hub repository https://github.com/venkatesh-palla/shopping-app.git
+2. Create Database and run script under https://github.com/venkatesh-palla/shopping-app/blob/master/src/main/resources/tableScript.sql. This will generate the Required tables
+3. Run class https://github.com/venkatesh-palla/shopping-app/blob/master/src/main/java/com/demo/shoppingapp/ShoppingAppApplication.java
+4. Start Executing the API's Mentioned in below.
+
+ # Database Design and script 
 
 ```
                         ---->Users Table<----
@@ -87,7 +96,8 @@ CREATE TABLE `coupons` (
   UNIQUE KEY `coupon_code` (`coupon_code`)
 );
 ```
-**Test results and API Responses:**
+
+# Test results and API Responses:
 https://docs.google.com/document/d/1xG0sABigjRNuFlEyTeCrWnjpC5yOMoIrhPF5UEMZ9IU/edit?usp=sharing
 
  API Definations:
